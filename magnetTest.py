@@ -1,36 +1,5 @@
-# -------------------------------------------------------------------------
-#
-# PYTHON for DUMMIES 20-21
-# Problème 8
-#
-# Script de test
-#  Vincent Legat
-#
-# Largement inspiré du programme de Nicolas Roisin :-)
-# Ou les méthodes numériques pour obtenir la solution du projet P2 !
-#
-# -------------------------------------------------------------------------
-#
-
-
 from numpy import *
 from scipy.spatial import Delaunay
-
-# ------------------------------------------------------------------------------------
-#
-# Intégration du flux magnétique
-#
-#    Xmagnet,Ymagnet : tableaux numpy des coordonnées x,z des sommets  de l'aimant 
-#    Zmagnet : scalaire contenant la hauteur du l'aimant
-#    Xcoil,Ycoil : tableaux numpy des coordonnées x,z des sommets de la bobine
-#    triangles : tableau contenant les indices des 3 sommets de chaque élément
-#    Xshift : tableau numpy contenant les translation de l'aimant sur une période
-#    mu0 : perméabilité du vide
-#    mu  : valeur absolue de la composante z du momemt magnétique du l'aimant = [0,0,-mu]
-#   
-#  La fonction renvoie un vecteur phi contenant le flux du champs magnétique intercepté
-#  par une spire exprimé en [T cm2]
-#
 
 def area(x,y) :
     
